@@ -33,8 +33,8 @@ public abstract class Livro {
 	}
 	
 	public void visualizarInformacoes() {
-		System.out.println("Título: " + this.titulo);
 		System.out.println("ID: " + this.id);
+		System.out.println("Título: " + this.titulo);
 		System.out.println("Editora: " + this.editora);
 		System.out.println("Ano: " + this.ano);
 		System.out.println("Páginas: " + this.paginas);
