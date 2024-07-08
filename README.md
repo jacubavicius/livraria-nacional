@@ -9,10 +9,31 @@ Trata-se de uma aplicação de e-commerce com tema livre, que inclui funcionalid
 
 
 ## Layout Console
+![Console1](https://github.com/jacubavicius/livraria-nacional/blob/main/assets/menu-cadastro.png)     
+![Console2](https://github.com/jacubavicius/livraria-nacional/blob/main/assets/listartodos.png)
 
-## Tecnologias utilizadas
+## Tecnologia utilizada
 ### Back-End
 - Java
+
+## Como executar o projeto
+#### Pré-Requisito: Java 17
+
+```bash
+# clonar repositório
+git clone https://github.com/jacubavicius/livraria-nacional.git
+
+# entrar na pasta do projeto
+cd  src/livraria
+
+# compilar o arquivo .java
+javac Menu.java
+
+# executar o arquivo .class
+java Menu
+```
 ## Autora
 
 Gabriella Jacubavicius
+
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabriella-jacubavicius/)
