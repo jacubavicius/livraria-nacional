@@ -9,8 +9,8 @@ Trata-se de uma aplicação de e-commerce com tema livre, que inclui funcionalid
 
 
 ## Layout Console
-![Console1](https://github.com/jacubavicius/livraria-nacional/blob/main/assets/menu-cadastro.png)     
-![Console2](https://github.com/jacubavicius/livraria-nacional/blob/main/assets/listartodos.png)
+![Console1](https://github.com/jacubavicius/livraria-nacional/blob/main/assets/menu-cadastroProduto.png)     
+![Console2](https://github.com/jacubavicius/livraria-nacional/blob/main/assets/listarTodosProdutos.png)
 
 ## Tecnologia utilizada
 ### Back-End
