@@ -13,7 +13,7 @@ public class LivrariaController implements LivrariaRepository {
 	@Override
 	public void cadastrar(Livro livro) {
 		listaLivros.add(livro);
-		System.out.println("\n" + livro.getTitulo() + " foi cadastrado com sucesso!");
+		System.out.println("\n'" + livro.getTitulo() + "' foi cadastrado com sucesso!");
 	}
 
 	@Override
@@ -40,7 +40,7 @@ public class LivrariaController implements LivrariaRepository {
 
 		if (buscarLivro != null) {
 			listaLivros.set(listaLivros.indexOf(buscarLivro), livro);
-			System.out.println("\nLivro '" + livro.getTitulo() + "' foi atualizado com sucesso!");
+			System.out.println("\n'" + livro.getTitulo() + "' foi atualizado com sucesso!");
 		} else {
 			System.out.println("\nLivro não encontrado. Tente outro ID!");
 		}
@@ -51,11 +51,11 @@ public class LivrariaController implements LivrariaRepository {
 		var livro = buscarNaColletion(id);
 
 		if (livro != null) {
-			if (listaLivros.remove(livro) == true)
-				System.out.println("\nLivro '" + livro.getTitulo() + "' foi removido com sucesso!");
-			else
-				System.out.println("\nLivro '" + livro.getTitulo() + "' não foi encontrado!");
-
+			listaLivros.remove(livro);
+			System.out.println("\n'" + livro.getTitulo() + "' foi removido com sucesso!");		
+		}
+		else {
+			System.out.println("\nLivro não encontrado. Tente outro ID!");
 		}
 	}
 
@@ -64,10 +64,9 @@ public class LivrariaController implements LivrariaRepository {
 		var livro = buscarNaColletion(id);
 
 		if (livro != null) {
-			livro.venda(quantidade);
-			System.out.println("\n Venda efetuada com sucesso!");
+			System.out.println(livro.venda(quantidade) == false ? "\nProduto esgotado!" : "\nVenda efetuada com sucesso!");
 		} else {
-			System.out.println("\nLivro '" + livro.getTitulo() + "' não foi encontrado!");
+			System.out.println("\nLivro não encontrado. Tente outro ID!");
 		}
 
 	}

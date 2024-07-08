@@ -23,7 +23,6 @@ public abstract class Livro {
 	public boolean venda(int quantidade) {
 		
 		if(this.getQuantidade() < quantidade || this.getQuantidade() == 0) {
-			System.out.println("Produto esgotado!\n\n");
 			return false;
 		}
 		else {
